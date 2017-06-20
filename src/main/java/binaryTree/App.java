@@ -1,24 +1,9 @@
-/**
- * Created by srawa5 on 4/25/2017.
- */
-public class Application {
+package binaryTree;
+
+public class App {
 
     public static void main(String[] args) {
-
-        // binaryTreeQuestions();
-
-
-        String input = "asddhadjagjsdgajsgjdasgjgdjagjdsgghfajjasjfj";
-        long start = System.currentTimeMillis();
-        System.out.println("N is: " + input.length());
-        System.out.println(StringUtility.largestPalindromicSubsequenceWithDP(input));
-        long end = System.currentTimeMillis();
-        System.out.println(end - start);
-
-        start = System.currentTimeMillis();
-        System.out.println(StringUtility.largestPalindromicSubsequence(input));
-        end = System.currentTimeMillis();
-        System.out.println(end - start);
+        binaryTreeQuestions();
     }
 
     private static void binaryTreeQuestions() {
@@ -133,5 +118,6 @@ public class Application {
         System.out.println("**********  check Sum Tree Property **************");
         System.out.println("Have Child sum Property : " + (BinaryTree.checkSumTreeProperty(root1, new int[1]) ? "True" : "false"));
     }
+
 
 }

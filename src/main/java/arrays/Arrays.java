@@ -1,3 +1,5 @@
+package arrays;
+
 import TaskOfThrowingDice.DummyClass;
 import TaskOfThrowingDice.Task;
 
