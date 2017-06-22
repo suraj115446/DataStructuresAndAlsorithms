@@ -3,9 +3,6 @@ package arrays;
 import TaskOfThrowingDice.DummyClass;
 import TaskOfThrowingDice.Task;
 
-/**
- * Created by Suraj on 4/26/2017.
- */
 public class Arrays {
 
     private static void slidingWindowMaximum() {
