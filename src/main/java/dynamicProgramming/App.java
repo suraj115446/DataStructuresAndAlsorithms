@@ -1,4 +1,4 @@
-package maxSumPath;
+package dynamicProgramming;
 
 /**
  * Created by Suraj on 7/6/2017.
