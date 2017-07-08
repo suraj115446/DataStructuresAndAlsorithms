@@ -3,7 +3,7 @@ package dynamicProgramming;
 /**
  * Created by Suraj on 7/6/2017.
  */
-public class App {
+public class MaximumSumInArrayFromStartToEnd {
 
     public static void main(String[] args) {
 
