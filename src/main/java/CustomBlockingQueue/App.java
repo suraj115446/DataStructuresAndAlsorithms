@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
 
 
-    BlockingQueue<String> blockingQueue = new CustomBlockingQueue<>(10);
+    BlockingQueue<String> blockingQueue = new CustomBlockingQueue<String>(10);
 
     Producer producer = new Producer(blockingQueue);
     Consumer consumer = new Consumer(blockingQueue);
