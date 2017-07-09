@@ -1,6 +1,5 @@
 package ThreadSequencing;
 
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
@@ -37,7 +36,7 @@ public class Task implements Runnable {
                 if (i > max) {
                     break;
                 }
-                System.out.println(Thread.currentThread().getName() + "is printing  : " + i);
+                System.out.println("Thread - "+Thread.currentThread().getName() + " is printing: " + i);
                 i += n;
                 condition.signalAll();
                 threadNumber++;

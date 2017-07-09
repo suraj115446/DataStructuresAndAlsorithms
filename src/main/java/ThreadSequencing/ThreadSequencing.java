@@ -1,5 +1,7 @@
 package ThreadSequencing;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -10,14 +12,16 @@ public class ThreadSequencing {
     public static void main(String[] args) {
 
         ReentrantLock lock= new ReentrantLock();
-        Runnable task = new Task(lock, 3, 5);
-        Thread thread1= new Thread(task,"1");
-        Thread thread2= new Thread(task,"2");
-        Thread thread3= new Thread(task,"3");
+        int n = 7;
+        long max = 30;
+        Task task = new Task(lock, n, max);
+        List<Thread> threadList= new ArrayList<>();
 
-        thread1.start();
-        thread2.start();
-        thread3.start();
+        for(int i=1; i<=n;i++){
+            threadList.add(new Thread(task, ""+i));
+        }
+
+        threadList.forEach(thread -> thread.start());
 
     }
 
