@@ -61,4 +61,8 @@ public class CustomCyclicBarrier {
 
     }
 
+    public void reset(){
+        tempCount.set(0l);
+    }
+
 }
