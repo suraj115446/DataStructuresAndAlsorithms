@@ -4,9 +4,6 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * Created by Suraj on 7/9/2017.
- */
 public class CustomCyclicBarrier {
 
     private final long count;

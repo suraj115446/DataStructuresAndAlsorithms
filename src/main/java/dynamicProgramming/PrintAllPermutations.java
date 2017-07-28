@@ -9,8 +9,7 @@ public class PrintAllPermutations {
     private static int counter=1;
 
     public static void main(String[] args) {
-
-
+        
         char[] array = new char[]{'a', 'b', 'c', 'd'};
 
         permute(array, 0, array.length - 1);
@@ -23,9 +22,7 @@ public class PrintAllPermutations {
             System.out.print(counter +" : ");
             counter++;
             for (char c : array) {
-
                 System.out.print(c);
-
             }
             System.out.println();
         } else {
@@ -35,8 +32,6 @@ public class PrintAllPermutations {
                 swap(array, i, j);
             }
         }
-
-
     }
 
     private static void swap(char[] array, int i, int l) {

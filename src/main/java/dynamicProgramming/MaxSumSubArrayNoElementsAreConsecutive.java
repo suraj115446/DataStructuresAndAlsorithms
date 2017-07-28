@@ -6,7 +6,7 @@ package dynamicProgramming;
 public class MaxSumSubArrayNoElementsAreConsecutive {
 
     public static void main(String[] args) {
-        int[] array = new int[]{5,5,10,100,10,5};
+        int[] array = new int[]{5,50,10,20,150,100,10,4};
         //int[] array = new int[]{1,2,3};
         //int[] array = new int[]{1, 20, 3};
         int l = array.length;
