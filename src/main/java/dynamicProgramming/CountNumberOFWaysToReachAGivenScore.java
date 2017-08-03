@@ -1,22 +1,15 @@
 package dynamicProgramming;
 
 /**
- * Created by Suraj on 8/2/2017.
+ * Coin Change Problem is the superset of CountNumberOFWaysToReachAGivenScore
  */
 public class CountNumberOFWaysToReachAGivenScore {
 
     public static void main(String[] args) {
 
-        int[] array = new int[]{3,5,10};
+        int[] array = new int[]{1,2,3};
 
-        int score= 60;
-
-        int[] dp = new int[21];
-
-        for(int i=0;i<array[0];i++){
-            dp[i] = 0;
-        }
-        dp[array[0]]=1;
+        int score= 4;
 
         System.out.println(recMethod(array,0,array.length-1,score));
 
