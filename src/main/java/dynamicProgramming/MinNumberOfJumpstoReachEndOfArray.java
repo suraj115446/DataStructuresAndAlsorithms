@@ -29,7 +29,6 @@ public class MinNumberOfJumpstoReachEndOfArray {
             }
         }
 
-
         return min;
     }
 
